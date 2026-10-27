@@ -1,0 +1,6 @@
+node_modules/
+dist/
+blockchain/artifacts/
+blockchain/cache/
+.DS_Store
+*.log
