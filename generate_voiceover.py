@@ -2,8 +2,8 @@ import asyncio
 import os
 import edge_tts
 
-# Voice selection: en-US-GuyNeural is clear, confident, professional, and natural.
-VOICE = "en-US-GuyNeural"
+# Voice selection: en-IN-PrabhatNeural is a natural, clear, professional Indian English male voice.
+VOICE = "en-IN-PrabhatNeural"
 RATE = "+0%"
 PITCH = "+0Hz"
 
