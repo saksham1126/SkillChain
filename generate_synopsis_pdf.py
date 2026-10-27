@@ -306,20 +306,6 @@ def create_synopsis_pdf(output_filename="SkillChain_Project_Synopsis.pdf"):
     story.append(Paragraph("✔ Authorizing revocation by the legitimate issuer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✔ Rejecting revocation attempts by unauthorized accounts", bullet_style))
     story.append(Paragraph("✔ Rejecting verification of revoked certificates &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✔ Preventing duplicate revocation calls", bullet_style))
 
-    # 9. Conclusion & Future Scope
-    story.append(Paragraph("9. Conclusion & Future Scope", h1_style))
-    story.append(Paragraph(
-        "<b>Conclusion:</b> SkillChain demonstrates a practical, production-aligned implementation of decentralized identity and "
-        "academic credentialing. By combining client-side cryptographic hashing with Ethereum smart contracts, the project eliminates "
-        "certificate fraud and removes verification bottlenecks without storing sensitive student records on-chain.",
-        body_style,
-    ))
-    story.append(Paragraph(
-        "<b>Future Scope:</b> (1) Storing certificate visual assets on decentralized storage (IPFS); (2) Minting non-transferable Soulbound "
-        "Tokens (ERC-5192) directly to student decentralized identity (DID) wallets; (3) Deploying to Layer-2 rollups (Arbitrum, Polygon) for sub-cent gas fees.",
-        body_style,
-    ))
-
     # Build document with custom canvas
     doc.build(story, canvasmaker=NumberedCanvas)
     print(f"PDF successfully created: {output_filename}")

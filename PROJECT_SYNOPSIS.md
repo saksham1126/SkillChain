@@ -135,16 +135,3 @@ The project includes an automated test suite (`blockchain/test/SkillChain.test.j
 - **Test 9**: Verification rejection for revoked certificates (`isRevoked = true`).
 - **Test 10**: Prevention of redundant revocation on already revoked credentials.
 *Result: 10/10 automated tests passing.*
-
----
-
-## 9. Conclusion & Future Scope
-
-### Conclusion
-**SkillChain** successfully demonstrates a practical, lightweight, and cost-effective implementation of blockchain technology for educational and professional credentialing. By combining client-side cryptographic hashing with Ethereum smart contract enforcement, the platform provides zero-trust verification that eliminates certificate fraud.
-
-### Future Scope
-- **IPFS Integration**: Decentralized storage of certificate PDF documents and badges via InterPlanetary File System (IPFS).
-- **Soulbound Tokens (SBT / ERC-5192)**: Minting non-transferable NFTs directly to student wallet addresses.
-- **Multi-Signature Issuing**: Requiring multi-signature approval (e.g., Dean + Registrar) before anchoring credentials.
-- **Layer 2 Deployment**: Deploying to low-cost networks such as Polygon, Arbitrum, or Base for near-zero gas fee transactions.
