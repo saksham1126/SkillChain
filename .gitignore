@@ -4,3 +4,14 @@ blockchain/artifacts/
 blockchain/cache/
 .DS_Store
 *.log
+
+# Presentation & voice files (not part of the project)
+audio_clips/
+*.mp3
+*.pptx
+*.pdf
+generate_*.py
+presentation.html
+PRESENTATION_SCRIPT.md
+PROJECT_SYNOPSIS.md
+synopsis.html
